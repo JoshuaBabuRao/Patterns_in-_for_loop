@@ -1,3 +1,4 @@
+package forLoopLearning;
 
 public class Pattern_Star {
 
@@ -17,6 +18,9 @@ public class Pattern_Star {
 		System.out.println("-----------");
 
 		p.print_patetrn_five();
+		System.out.println("-----------");
+
+		p.print_patetrn_six();
 	}
 
 	private void print_pattern_one()
@@ -89,4 +93,57 @@ public class Pattern_Star {
 		}
 	}
 
+	private void print_patetrn_six() {
+		for (int j = 5; j >= 1; j--) {
+			for (int i = 5; i >= j; i--) {
+				System.out.print(j + " ");
+			}
+
+			for (int s = j; s >= 1; s--) {
+				System.out.print(s + " ");
+
+			}
+			System.out.println();
+		}
+	}
+
 }
+
+/*
+1 * * * * * 
+1 2 * * * * 
+1 2 3 * * * 
+1 2 3 4 * * 
+1 2 3 4 5 * 
+-----------
+5 * * * * * 
+4 5 * * * * 
+3 4 5 * * * 
+2 3 4 5 * * 
+1 2 3 4 5 * 
+-----------
+1 * * * * * 
+2 2 * * * * 
+3 3 3 * * * 
+4 4 4 4 * * 
+5 5 5 5 5 * 
+-----------
+1 1 2 3 4 5 
+2 2 1 2 3 4 
+3 3 3 1 2 3 
+4 4 4 4 1 2 
+5 5 5 5 5 1 
+-----------
+5 * * * * * 
+4 4 * * * * 
+3 3 3 * * * 
+2 2 2 2 * * 
+1 1 1 1 1 * 
+-----------
+5 5 4 3 2 1 
+4 4 4 3 2 1 
+3 3 3 3 2 1 
+2 2 2 2 2 1 
+1 1 1 1 1 1 
+
+*/
